@@ -1,6 +1,35 @@
 <!-- here is a big, empty SVG! make it into something interesting! -->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="600px" width="600px">
     <!-- you can delete this big rectangle - it's just a placeholder -->
-    <rect x="0" y="0" height="600" width="600" fill="#DDD" />
+    <g id="legs">
+        <line x1="330" x2="330" y1="300" y2="480" stroke="orange" stroke-width="7"/>
+        <line x1="330" x2="300" y1="440" y2="460" stroke="orange" stroke-width="7"/>
+        <line x1="330" x2="360" y1="440" y2="460" stroke="orange" stroke-width="7"/>
+        <line x1="250" x2="250" y1="300" y2="480" stroke="orange" stroke-width="7"/>
+        <line x1="250" x2="220" y1="440" y2="460" stroke="orange" stroke-width="7"/>
+        <line x1="250" x2="280" y1="440" y2="460" stroke="orange" stroke-width="7"/>
+    </g>
+    <g id="bird" stroke-width="5">
+        <ellipse cx="300" cy="300" rx="150" ry="100" stroke="#0D9799" fill="#47D0D2"/>
+         <circle cx="200" cy="200" r="70" stroke="#0D9799" fill="#47D0D2"/>
+         <path d="M300,250 Q450,250 300,350 T800," fill="none" stroke="#0A7F80" />
+
+        <g id="face">
+        <circle cx="200" cy="180" r="15" stroke="#FFFFFF" fill="#000000"/>
+        <polygon points="100,210 150,170 160,210" stroke="#FFAF03" fill="#FFD203" />
+        </g>
+    </g>
+    <g id="face">
+        <circle cx="200" cy="180" r="15" stroke="#FFFFFF" stroke-width="8" fill="#000000"/>
+        <polygon points="100,210 150,170 160,210" stroke="#FFAF03" stroke-width="3" fill="#FFD203" />
+    </g>
+    <g id="eggs">
+        <ellipse cx="460" cy="460" rx="45" ry="60" stroke="#D5CE9D" stroke-width="3" fill="#EBE7CB"/>
+    </g>
+    <path d="M 80 280 Q 95 150 180 280" stroke="#FF8E8E" fill="none" stroke-width="10" stroke-linecap="round"/>
+    
+    <!-- the same two transformations, just in different order -->
+    <use transform=" translate(160,-80) rotate(15)" stroke="blue" xlink:href="#eggs" />
+    <use transform=" translate(-140,150) rotate(-15)" stroke="blue" xlink:href="#eggs" />
 </svg>
 
