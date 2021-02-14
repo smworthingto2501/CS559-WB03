@@ -45,6 +45,7 @@ function draw(jump) {
         context.translate(20, 0);
         context.fillStyle = "blue";
     } else {
+        context.resetTransform();
         context.fillStyle = "red";
     }
     context.beginPath();
